@@ -75,6 +75,40 @@ footer{text-align:center;padding:30px 0;border-top:1px solid rgba(255,255,255,.1
 }
 .fade{opacity:0;transform:translateY(20px);transition:all .8s;}
 .fade.show{opacity:1;transform:none;}
+  /* ⭐ Celebrity Gallery */
+.celebrity-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+  margin-top:30px;
+}
+
+.celeb-card{
+  background:#1a1a1a;
+  border-radius:14px;
+  overflow:hidden;
+  text-align:center;
+  padding-bottom:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,.4);
+  transition:.2s;
+}
+
+.celeb-card:hover{
+  transform:scale(1.03);
+}
+
+.celeb-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.celeb-name{
+  margin-top:8px;
+  color:var(--gold);
+  font-weight:600;
+  font-size:1rem;
+}
 </style>
 </head>
 <body>
@@ -146,6 +180,44 @@ footer{text-align:center;padding:30px 0;border-top:1px solid rgba(255,255,255,.1
     </div>
   </div>
 </section>
+  <!-- ⭐⭐ CELEBRITY GALLERY SECTION ⭐⭐ -->
+<section id="celebrity" class="section">
+  <div class="container">
+    <h2 class="fade">Celebrity Guests</h2>
+    <p class="section-sub fade">Famous personalities who visited XD’or Profumo</p>
+
+    <div class="celebrity-gallery fade">
+
+      <!-- ⭐ Add celebrity photo here -->
+      <div class="celeb-card">
+        <!-- Replace with celebrity image -->
+        <img src="images/celeb1.jpg" alt="">
+        <p class="celeb-name">Celebrity Name</p>
+      </div>
+
+      <div class="celeb-card">
+        <!-- Replace with celebrity image -->
+        <img src="images/celeb2.jpg" alt="">
+        <p class="celeb-name">Celebrity Name</p>
+      </div>
+
+      <div class="celeb-card">
+        <!-- Repeat as many as you want -->
+        <img src="images/celeb3.jpg" alt="">
+        <p class="celeb-name">Celebrity Name</p>
+      </div>
+
+      <!-- ⭐ You can duplicate this block:
+      <div class="celeb-card">
+        <img src="images/your-image.jpg" alt="">
+        <p class="celeb-name">Celebrity Name</p>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
 
 <section id="contact" class="section">
   <div class="container contact">
@@ -202,4 +274,5 @@ function sendMsg(e){
 </script>
 </body>
 </html>
+
 
