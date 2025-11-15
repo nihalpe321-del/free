@@ -109,6 +109,50 @@ footer{text-align:center;padding:30px 0;border-top:1px solid rgba(255,255,255,.1
   font-weight:600;
   font-size:1rem;
 }
+  /* 🔥 NEW: CONTACT ADDRESS STYLING */
+.contact-address { 
+  margin-top: 12px; 
+  color: #e9e6df; 
+}
+
+.addr-title { 
+  color: var(--gold); 
+  margin: 0 0 6px; 
+  font-family: "Playfair Display", serif; 
+  font-size: 1.15rem; 
+}
+
+.addr-line { 
+  margin: 0; 
+  color: #d7d3c6; 
+  font-weight: 600; 
+  font-size: 1rem;
+}
+
+.addr-line.small { 
+  color: var(--muted); 
+  font-weight: 400; 
+  font-size: 0.95rem; 
+}
+
+/* 🔥 NEW: Google Maps Button */
+.map-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 8px 14px;
+  background: rgba(191,164,111,0.08);
+  border: 1px solid rgba(191,164,111,0.2);
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--gold);
+  transition: 0.2s;
+}
+
+.map-link:hover { 
+  background: rgba(191,164,111,0.16); 
+  color: #fff; 
+}
+
 </style>
 </head>
 <body>
@@ -239,6 +283,24 @@ footer{text-align:center;padding:30px 0;border-top:1px solid rgba(255,255,255,.1
     </form>
   </div>
 </section>
+  <!-- 🔥 NEW: CONTACT ADDRESS BLOCK START -->
+<div class="contact-address fade">
+  <h3 class="addr-title">Visit Our Store</h3>
+
+  <p class="addr-line">XD’or Profumo</p>
+  <p class="addr-line small">Lulu Mall Dammam, 18th Street</p>
+
+  <!-- 🔥 NEW: GOOGLE MAPS LINK -->
+  <p style="margin-top: 10px;">
+    <a class="map-link"
+       href="https://www.google.com/maps/search/?api=1&query=XD%27or+Profumo+Lulu+Mall+Dammam+18th+Street"
+       target="_blank" rel="noopener noreferrer">
+      📍 View on Google Maps
+    </a>
+  </p>
+</div>
+<!-- 🔥 NEW: CONTACT ADDRESS BLOCK END -->
+
 
 <footer>
   © <span id="year"></span> XD’or Profumo. All rights reserved.
@@ -274,6 +336,7 @@ function sendMsg(e){
 </script>
 </body>
 </html>
+
 
 
 
